@@ -12,6 +12,9 @@
       <ion-title size="large">Tab 1</ion-title>
     </ion-toolbar>
   </ion-header>
+  <br>
+<div *ngFor="let mess of inbox"  class="div1">
+    <b> {{mess.content.message.body.senderName}}</b><br><br>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+</div>
 </ion-content>
